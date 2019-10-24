@@ -1,0 +1,13 @@
+<ul [ngStyle]="{background: getColorBackgroud(), color: getColor()}" class="list-group-item">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="title">{{postTitle}}</h2>
+        </div>
+        <div class="col-md-6">
+            <h4 class="date">{{postCreatedAt}}</h4>
+        </div>
+    </div>
+    <h4>{{postContent}}</h4>
+    <button [ngStyle]="{background: 'green', color: 'white'}" type="button" (click)="clickAjout($event)">Love it!!</button>
+    <button [ngStyle]="{background: 'red', color: 'white'}" type="button" (click)="clickDelete($event)">Don't love it!!</button>
+</ul>
